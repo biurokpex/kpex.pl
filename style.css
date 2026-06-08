@@ -1,147 +1,75 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #ffffff;
     color: #222;
+    line-height: 1.7;
 }
 
 /* Góra */
 .topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 40px;
-    background: #ffffff;
-    border-bottom: 1px solid #e3e3e3;
+    padding: 25px 40px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.logo-wrap {
-    display: flex;
-    align-items: center;
+.logo {
+    height: 42px;
 }
 
-.logo-img {
-    height: 40px;
-    display: block;
-}
-
-.menu a {
-    margin-left: 24px;
-    text-decoration: none;
-    color: #444;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.menu a:hover {
-    color: #c00000;
-}
-
-/* Hero – spokojna wizytówka */
+/* HERO */
 .hero {
-    background: #ffffff;
-    padding: 80px 20px;
-    text-align: center;
-    border-bottom: 1px solid #e3e3e3;
+    padding: 80px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .hero h1 {
-    font-size: 32px;
-    margin-bottom: 12px;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
     color: #111;
 }
 
 .hero p {
-    font-size: 16px;
+    font-size: 18px;
     color: #555;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 /* Sekcje */
-.content {
+.section {
     max-width: 900px;
-    margin: 50px auto;
-    padding: 32px 32px 36px;
-    background: #ffffff;
-    border-radius: 14px;
-    border: 1px solid #e3e3e3;
+    margin: 60px auto;
+    padding: 0 40px;
 }
 
-.content h2 {
-    font-size: 22px;
-    margin-bottom: 18px;
+.section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
     color: #111;
 }
 
-/* Dwie kolumny */
-.two-col {
-    display: grid;
-    grid-template-columns: 2fr 1.3fr;
-    gap: 30px;
+.section p {
+    font-size: 17px;
+    color: #444;
 }
 
-.box-muted {
-    background: #fafafa;
-    border-radius: 10px;
-    border: 1px solid #e6e6e6;
-    padding: 18px 20px;
+.section ul {
+    padding-left: 20px;
 }
 
-.box-muted h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.box-muted ul {
-    margin: 0;
-    padding-left: 18px;
-}
-
-.box-muted li {
-    font-size: 14px;
-    color: #555;
-    margin: 4px 0;
-}
-
-/* Kafelki usług */
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.tile {
-    background: #fafafa;
-    border-radius: 10px;
-    border: 1px solid #e6e6e6;
-    padding: 18px 20px;
-}
-
-.tile h3 {
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: #111;
-}
-
-.tile p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.5;
-}
-
-/* Kontakt */
-#kontakt p {
-    font-size: 14px;
-    margin: 6px 0;
+.section li {
+    margin: 8px 0;
+    font-size: 17px;
+    color: #444;
 }
 
 /* Stopka */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #ffffff;
-    border-top: 1px solid #e3e3e3;
-    font-size: 13px;
+    padding: 40px;
+    margin-top: 60px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 14px;
     color: #777;
 }
