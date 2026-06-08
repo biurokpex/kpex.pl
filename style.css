@@ -84,3 +84,21 @@ footer {
     color: #fff;
     margin-top: 40px;
 }
+.hero {
+    background: linear-gradient(to bottom right, #e60000, #8b0000);
+    color: #fff;
+    padding: 120px 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.9;
+}
