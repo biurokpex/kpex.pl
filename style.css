@@ -127,3 +127,14 @@ section.content ul {
     margin-left: 20px;
     line-height: 1.8;
 }
+.icons li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.icons i {
+    color: #e60000;
+    margin-right: 10px;
+    font-size: 20px;
+}
