@@ -1,25 +1,22 @@
 :root {
-    --bg: #EFE6DD;      /* jasny beż */
-    --bg-alt: #3A2E2A;  /* ciemny brąz */
-    --text: #2A2A2A;    /* ciemny grafit */
+    --bg: #EFE6DD;
+    --bg-alt: #3A2E2A;
+    --text: #2A2A2A;
     --text-light: #F4ECE4;
-    --accent: #E0202B;  /* czerwony X */
-    --gold: #C9A46A;    /* złoty detal */
+    --accent: #E0202B;
+    --gold: #C9A46A;
 }
 
-/* RESET PROSTY */
-
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: var(--bg);
     color: var(--text);
-    line-height: 1.5;
 }
 
 /* TOPBAR */
@@ -31,19 +28,11 @@ body {
     padding: 20px 60px;
     background: var(--bg);
     border-bottom: 1px solid var(--gold);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.logo-wrap {
-    display: flex;
-    align-items: center;
 }
 
 .logo-img {
-    height: 52px;
-    display: block;
+    height: 60px;
+    width: auto;
 }
 
 .menu a {
@@ -74,22 +63,15 @@ body {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--accent);
-    margin-bottom: 10px;
 }
 
 .hero-text p {
     font-size: 18px;
-    color: var(--text);
-}
-
-.hero-media {
-    flex: 1;
 }
 
 .hero-img {
     width: 100%;
     border-radius: 12px;
-    display: block;
 }
 
 /* SEKCJE */
@@ -99,7 +81,6 @@ body {
     align-items: center;
     padding: 70px 60px;
     gap: 40px;
-    border-top: 1px solid rgba(0,0,0,0.05);
     background: var(--bg);
 }
 
@@ -108,22 +89,9 @@ body {
     color: var(--text-light);
 }
 
-.section-alt .section-text p {
-    color: var(--text-light);
-}
-
-.section-media {
-    flex: 1;
-}
-
 .section-media img {
     width: 100%;
     border-radius: 12px;
-    display: block;
-}
-
-.section-text {
-    flex: 1;
 }
 
 .section-text h2 {
@@ -140,7 +108,6 @@ body {
 
 .section-text p {
     font-size: 17px;
-    color: var(--text);
 }
 
 /* KONTAKT */
@@ -160,10 +127,6 @@ body {
     color: var(--gold);
 }
 
-.contact p {
-    margin-bottom: 6px;
-}
-
 /* FOOTER */
 
 footer {
@@ -177,15 +140,14 @@ footer {
 /* RESPONSYWNOŚĆ */
 
 @media (max-width: 900px) {
-    .topbar {
+    .hero,
+    .section,
+    .section-alt {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 20px;
+        padding: 40px 20px;
     }
 
     .menu {
-        margin-top: 10px;
-        display: flex;
         flex-wrap: wrap;
         gap: 10px;
     }
@@ -193,12 +155,5 @@ footer {
     .menu a {
         margin-left: 0;
         font-size: 12px;
-    }
-
-    .hero,
-    .section,
-    .section-alt {
-        flex-direction: column;
-        padding: 40px 20px;
     }
 }
