@@ -1,100 +1,204 @@
 :root {
-    --bg: #0b0d10;
-    --text: #f5f5f5;
-    --muted: #b3b3b3;
-    --accent: #e0202b;
+    --bg: #EFE6DD;      /* jasny beż */
+    --bg-alt: #3A2E2A;  /* ciemny brąz */
+    --text: #2A2A2A;    /* ciemny grafit */
+    --text-light: #F4ECE4;
+    --accent: #E0202B;  /* czerwony X */
+    --gold: #C9A46A;    /* złoty detal */
+}
+
+/* RESET PROSTY */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: var(--bg);
+    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg);
     color: var(--text);
-    line-height: 1.7;
+    line-height: 1.5;
 }
+
+/* TOPBAR */
 
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    border-bottom: 1px solid #1b1d22;
-    background: rgba(11, 13, 16, 0.95);
+    background: var(--bg);
+    border-bottom: 1px solid var(--gold);
     position: sticky;
     top: 0;
     z-index: 10;
 }
 
-.logo {
-    height: 40px;
+.logo-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 52px;
+    display: block;
 }
 
 .menu a {
-    margin-left: 24px;
+    margin-left: 20px;
     text-decoration: none;
-    color: var(--muted);
+    color: var(--text);
     font-size: 14px;
-    text-transform: uppercase;
     letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .menu a:hover {
     color: var(--accent);
 }
 
+/* HERO */
+
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 80px 60px;
-    background: var(--bg);
-}
-
-.hero-img {
-    width: 50%;
-    border-radius: 12px;
-}
-
-.hero-text {
-    width: 45%;
+    gap: 40px;
 }
 
 .hero-text h1 {
-    font-size: 40px;
-    margin-bottom: 16px;
+    font-size: 44px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
 }
 
 .hero-text p {
     font-size: 18px;
-    color: var(--muted);
+    color: var(--text);
 }
 
-.tags span {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff;
-    padding: 6px 12px;
-    margin-right: 8px;
-    border-radius: 4px;
-    font-size: 13px;
+.hero-media {
+    flex: 1;
 }
+
+.hero-img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+/* SEKCJE */
 
 .section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 60px;
-    border-top: 1px solid #1b1d22;
+    padding: 70px 60px;
+    gap: 40px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    background: var(--bg);
 }
 
-.section img {
-    width: 45%;
+.section-alt {
+    background: var(--bg-alt);
+    color: var(--text-light);
+}
+
+.section-alt .section-text p {
+    color: var(--text-light);
+}
+
+.section-media {
+    flex: 1;
+}
+
+.section-media img {
+    width: 100%;
     border-radius: 12px;
+    display: block;
 }
 
 .section-text {
-    width: 50%;
+    flex: 1;
 }
 
 .section-text h2 {
-    font-size
+    font-size: 32px;
+    margin-bottom: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.section-alt .section-text h2 {
+    color: var(--gold);
+}
+
+.section-text p {
+    font-size: 17px;
+    color: var(--text);
+}
+
+/* KONTAKT */
+
+.contact {
+    padding: 70px 60px;
+    background: var(--bg-alt);
+    color: var(--text-light);
+    border-top: 1px solid var(--gold);
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.contact p {
+    margin-bottom: 6px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #2A211E;
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+/* RESPONSYWNOŚĆ */
+
+@media (max-width: 900px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .menu a {
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .hero,
+    .section,
+    .section-alt {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+}
