@@ -3,12 +3,14 @@ body {
     font-family: Arial, sans-serif;
     background: #ffffff;
     color: #222;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
-/* Góra */
 .topbar {
-    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -16,18 +18,27 @@ body {
     height: 42px;
 }
 
-/* HERO */
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #000;
+}
+
 .hero {
-    padding: 80px 40px;
     max-width: 900px;
     margin: 0 auto;
-    text-align: left;
+    padding: 80px 40px 40px;
 }
 
 .hero h1 {
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 16px;
     color: #111;
 }
 
@@ -36,16 +47,21 @@ body {
     color: #555;
 }
 
-/* Sekcje */
 .section {
     max-width: 900px;
-    margin: 60px auto;
+    margin: 60px auto 0;
     padding: 0 40px;
 }
 
 .section h2 {
     font-size: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    color: #111;
+}
+
+.section h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
     color: #111;
 }
 
@@ -55,21 +71,20 @@ body {
 }
 
 .section ul {
-    padding-left: 20px;
+    padding-left: 22px;
 }
 
 .section li {
-    margin: 8px 0;
-    font-size: 17px;
+    font-size: 16px;
     color: #444;
+    margin-bottom: 6px;
 }
 
-/* Stopka */
 footer {
-    text-align: center;
+    margin-top: 80px;
     padding: 40px;
-    margin-top: 60px;
     border-top: 1px solid #e5e5e5;
+    text-align: center;
     font-size: 14px;
     color: #777;
 }
