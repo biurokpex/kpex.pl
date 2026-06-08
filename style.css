@@ -5,17 +5,14 @@ body {
     color: #222;
 }
 
-/* Górny pasek */
+/* Góra */
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 40px;
     background: #ffffff;
-    border-bottom: 1px solid #e4e4e4;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    border-bottom: 1px solid #e3e3e3;
 }
 
 .logo-wrap {
@@ -28,125 +25,123 @@ body {
     display: block;
 }
 
-/* Menu */
 .menu a {
     margin-left: 24px;
     text-decoration: none;
-    color: #333;
+    color: #444;
+    font-size: 14px;
     font-weight: 600;
-    font-size: 15px;
-    transition: color 0.2s;
 }
 
 .menu a:hover {
-    color: #e60000;
+    color: #c00000;
 }
 
-/* HERO – jasny, biznesowy */
+/* Hero – spokojna wizytówka */
 .hero {
     background: #ffffff;
+    padding: 80px 20px;
     text-align: center;
-    padding: 90px 20px;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e3e3e3;
 }
 
 .hero h1 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-bottom: 16px;
+    font-size: 32px;
+    margin-bottom: 12px;
     color: #111;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 16px;
     color: #555;
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 /* Sekcje */
 .content {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 50px auto;
     padding: 32px 32px 36px;
     background: #ffffff;
-    border-radius: 16px;
-    border: 1px solid #e4e4e4;
+    border-radius: 14px;
+    border: 1px solid #e3e3e3;
 }
 
 .content h2 {
-    font-size: 26px;
-    margin-bottom: 24px;
+    font-size: 22px;
+    margin-bottom: 18px;
     color: #111;
-    font-weight: 700;
 }
 
-/* Karty usług */
-.cards {
+/* Dwie kolumny */
+.two-col {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 2fr 1.3fr;
+    gap: 30px;
+}
+
+.box-muted {
+    background: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+    padding: 18px 20px;
+}
+
+.box-muted h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.box-muted ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.box-muted li {
+    font-size: 14px;
+    color: #555;
+    margin: 4px 0;
+}
+
+/* Kafelki usług */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.card {
-    background: #ffffff;
-    padding: 22px;
-    border-radius: 12px;
-    border: 1px solid #e4e4e4;
-    transition: 0.2s ease;
+.tile {
+    background: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+    padding: 18px 20px;
 }
 
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-}
-
-.card i {
-    font-size: 28px;
-    color: #e60000;
-    margin-bottom: 12px;
-}
-
-.card h3 {
+.tile h3 {
+    font-size: 16px;
     margin-bottom: 8px;
-    font-size: 18px;
     color: #111;
 }
 
-.card p {
+.tile p {
     font-size: 14px;
     color: #555;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
-/* Listy „Dlaczego” / „Zakres” */
-.why {
-    padding: 0;
-    margin: 0;
-}
-
-.why li {
-    list-style: none;
-    margin: 10px 0;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    color: #444;
-}
-
-.why i {
-    color: #e60000;
-    margin-right: 10px;
-    font-size: 16px;
+/* Kontakt */
+#kontakt p {
+    font-size: 14px;
+    margin: 6px 0;
 }
 
 /* Stopka */
 footer {
     text-align: center;
-    padding: 24px;
+    padding: 20px;
     background: #ffffff;
-    border-top: 1px solid #e4e4e4;
-    margin-top: 40px;
-    font-size: 14px;
+    border-top: 1px solid #e3e3e3;
+    font-size: 13px;
     color: #777;
 }
