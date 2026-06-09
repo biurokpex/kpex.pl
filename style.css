@@ -45,9 +45,9 @@ nav a:hover {
     color: #E0202B;
 }
 
-/* HERO */
+/* HERO — zdjęcie u góry */
 .hero {
-    background-image: url("Fitout.png");
+    background-image: url("Fit-out.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -132,6 +132,144 @@ h2 {
     text-align: center;
 }
 
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+}
+
 .card img {
     width: 100%;
-    height
+    height: 220px;
+    object-fit: cover;
+    filter: brightness(0.9);
+    transition: 0.4s ease;
+}
+
+.card:hover img {
+    filter: brightness(0.8);
+    transform: scale(1.03);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 18px 20px 10px 20px;
+    color: #E0202B;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.card p {
+    font-size: 15px;
+    color: #444;
+    margin: 0 20px 20px 20px;
+}
+
+/* O NAS */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* KONTAKT */
+.contact-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C9A46A;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+}
+
+/* STOPKA */
+.footer {
+    background: #2A2A2A;
+    color: white;
+    padding: 60px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
+}
+
+.footer-logo {
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #E0202B;
+}
+
+.footer-col a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-col a:hover {
+    color: #E0202B;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #C9A46A;
+    font-size: 13px;
+    color: #CCCCCC;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 120px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
