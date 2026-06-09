@@ -1,6 +1,3 @@
-
-}
-
 /* RESET */
 * {
     margin: 0;
@@ -110,7 +107,7 @@ h2 {
     gap: 25px;
 }
 
-/* KARTY PREMIUM + ANIMACJA */
+/* KARTY PREMIUM */
 .card {
     background: #FFFFFF;
     padding: 28px;
@@ -122,7 +119,7 @@ h2 {
     overflow: hidden;
 
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(25px);
     animation: fadeInUp 0.8s ease forwards;
 }
 
@@ -131,7 +128,7 @@ h2 {
     box-shadow: 0 12px 28px rgba(0,0,0,0.14);
 }
 
-/* Opóźnienia animacji kart */
+/* Opóźnienia animacji */
 .card:nth-child(1) { animation-delay: 0.1s; }
 .card:nth-child(2) { animation-delay: 0.2s; }
 .card:nth-child(3) { animation-delay: 0.3s; }
@@ -148,7 +145,7 @@ h2 {
     }
 }
 
-/* PREMIUM STYL ZDJĘĆ KPEX */
+/* ZDJĘCIA PREMIUM */
 .card img {
     width: 100%;
     height: 220px;
@@ -159,7 +156,7 @@ h2 {
     border: 2px solid #C9A46A20;
 }
 
-/* Overlay na zdjęciu */
+/* Overlay */
 .card::before {
     content: "";
     position: absolute;
@@ -177,14 +174,14 @@ h2 {
     background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.1));
 }
 
-/* Efekt premium po najechaniu */
+/* Hover zdjęcia */
 .card:hover img {
     filter: brightness(0.75) contrast(1.2);
     transform: scale(1.04);
     border-color: #E0202B60;
 }
 
-/* TYPOGRAFIA W KARTACH */
+/* TYPOGRAFIA */
 .card h3 {
     font-size: 22px;
     margin-top: 15px;
@@ -228,101 +225,5 @@ h2 {
     .card img,
     .card::before {
         height: 200px;
-    }
-}
-.card {
-    background: #FFFFFF;
-    border-radius: 16px;
-    border: 1px solid #E0D6C8;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    transition: 0.35s ease;
-    overflow: hidden;
-    position: relative;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
-}
-
-/* Styl zdjęć */
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 14px;
-    filter: brightness(0.85) contrast(1.1) saturate(1.05);
-    transition: 0.4s ease;
-    border: 2px solid #C9A46A20;
-}
-
-/* Overlay na zdjęciu */
-.card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 220px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.05));
-    border-radius: 14px;
-    pointer-events: none;
-    transition: 0.4s ease;
-}
-
-.card:hover::before {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.1));
-}
-
-/* Efekt premium po najechaniu */
-.card:hover img {
-    filter: brightness(0.75) contrast(1.2);
-    transform: scale(1.04);
-    border-color: #E0202B60;
-}
-/* ANIMACJA FADE-IN */
-.card {
-    opacity: 0;
-    transform: translateY(25px);
-    animation: fadeInUp 0.8s ease forwards;
-}
-
-/* Opóźnienia — efekt fali */
-.card:nth-child(1) { animation-delay: 0.1s; }
-.card:nth-child(2) { animation-delay: 0.2s; }
-.card:nth-child(3) { animation-delay: 0.3s; }
-.card:nth-child(4) { animation-delay: 0.4s; }
-.card:nth-child(5) { animation-delay: 0.5s; }
-.card:nth-child(6) { animation-delay: 0.6s; }
-.card:nth-child(7) { animation-delay: 0.7s; }
-.card:nth-child(8) { animation-delay: 0.8s; }
-/* ANIMACJA FADE-IN */
-.card {
-    opacity: 0;
-    transform: translateY(25px);
-    animation: fadeInUp 0.8s ease forwards;
-}
-
-/* Efekt fali — opóźnienia */
-.card:nth-child(1) { animation-delay: 0.1s; }
-.card:nth-child(2) { animation-delay: 0.2s; }
-.card:nth-child(3) { animation-delay: 0.3s; }
-.card:nth-child(4) { animation-delay: 0.4s; }
-.card:nth-child(5) { animation-delay: 0.5s; }
-.card:nth-child(6) { animation-delay: 0.6s; }
-.card:nth-child(7) { animation-delay: 0.7s; }
-.card:nth-child(8) { animation-delay: 0.8s; }
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
     }
 }
