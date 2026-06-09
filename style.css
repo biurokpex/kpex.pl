@@ -150,3 +150,35 @@ nav a {
 nav a:hover {
     color: #E0202B; /* czerwony X */
 }
+header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between; /* logo po lewej, menu po prawej */
+    align-items: center;
+    background: #EFE6DD;
+    border-bottom: 1px solid #C9A46A;
+}
+
+.logo {
+    height: 90px;   /* powiększone logo */
+    width: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2A2A2A;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+nav a:hover {
+    color: #E0202B;
+}
