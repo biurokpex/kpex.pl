@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -48,12 +49,14 @@ nav a {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0,0,0,0.35); /* delikatniejsze przyciemnienie */
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
+    max-width: 800px;
+    margin: auto;
 }
 
 /* SEKCJE */
@@ -82,21 +85,22 @@ section {
     text-align: center;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease;
 }
 
-/* OBRAZY W KARTACH – BEZ UCIĘĆ */
-.card-image {
-    width: 100%;
-    background: #000;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.card-image img {
-    display: block;
+/* ZDJĘCIA — BEZ UCIĘĆ */
+.card img {
     width: 100%;
     height: auto;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    background-color: #fff;
 }
 
-/* TEKSTY W KARTACH */
 .card h3 {
     padding: 15px 10px 5px;
     color: #E0202B;
@@ -152,9 +156,15 @@ section {
 .footer-container {
     max-width: 1200px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 40px;
+}
+
+.footer-col {
+    flex: 1 1 260px;
+    min-width: 260px;
 }
 
 .footer-logo {
@@ -204,5 +214,10 @@ section {
 
     .hero {
         padding: 120px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
