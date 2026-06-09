@@ -1,4 +1,3 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -30,13 +29,14 @@ header {
 
 nav {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
     color: #2A2A2A;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-weight: 500;
@@ -44,6 +44,28 @@ nav a {
 
 nav a:hover {
     color: #E0202B;
+}
+
+.lang-switch {
+    display: flex;
+    gap: 8px;
+}
+
+.lang-switch button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #C9A46A;
+    background: #F7F4EF;
+    cursor: pointer;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.lang-switch button.active {
+    background: #E0202B;
+    color: #fff;
+    border-color: #E0202B;
 }
 
 /* HERO */
@@ -68,24 +90,24 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 52px;
+    font-size: 48px;
     font-family: 'Cormorant Garamond', serif;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 
 .button {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 12px 24px;
     background: #E0202B;
     color: white;
     text-decoration: none;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.05em;
     transition: 0.3s;
 }
@@ -105,14 +127,14 @@ section {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 32px;
     font-family: 'Cormorant Garamond', serif;
     margin-bottom: 25px;
     color: #2A2A2A;
     text-align: center;
 }
 
-/* GRID USŁUG */
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -149,61 +171,58 @@ h2 {
 }
 
 .card h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 18px 20px 10px 20px;
     color: #E0202B;
     font-family: 'Cormorant Garamond', serif;
 }
 
 .card p {
-    font-size: 16px;
+    font-size: 15px;
     color: #444;
     margin: 0 20px 20px 20px;
 }
 
-/* DLACZEGO MY */
-#why-us {
-    background: #EFE6DD;
-    padding: 80px 20px;
-    border-top: 1px solid #C9A46A;
-    border-bottom: 1px solid #C9A46A;
-}
-
-.why-grid {
+/* KONTAKT */
+.contact-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    align-items: flex-start;
 }
 
-.why-item {
-    background: #FFFFFF;
-    padding: 30px;
-    border-radius: 14px;
-    border: 1px solid #E0D6C8;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    text-align: center;
-    transition: 0.3s ease;
+.contact-info h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
 }
 
-.why-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+.contact-info p {
+    font-size: 15px;
+    margin-bottom: 8px;
 }
 
-.why-item h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
-    color: #E0202B;
-    margin-bottom: 12px;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.why-item p {
-    font-size: 16px;
-    color: #444;
+.contact-form input,
+.contact-form textarea {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #D0C4B5;
+    font-size: 14px;
+    font-family: inherit;
+    background: #FFF;
 }
 
-/* STOPKA PREMIUM — CIEMNA */
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* STOPKA */
 .footer {
     background: #2A2A2A;
     color: #FFFFFF;
@@ -227,7 +246,7 @@ h2 {
 
 .footer-col h4 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 15px;
     color: #E0202B;
 }
@@ -237,7 +256,7 @@ h2 {
     color: #FFFFFF;
     text-decoration: none;
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .footer-col a:hover {
@@ -249,7 +268,7 @@ h2 {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #C9A46A;
-    font-size: 14px;
+    font-size: 13px;
     color: #CCCCCC;
 }
 
@@ -257,16 +276,23 @@ h2 {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
     }
 
     nav {
-        flex-wrap: wrap;
         justify-content: center;
     }
 
+    .hero {
+        padding: 120px 20px;
+    }
+
     .hero h1 {
-        font-size: 36px;
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 15px;
     }
 
     .card img {
