@@ -231,3 +231,53 @@ h2 {
         height: 200px;
     }
 }
+.card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    border: 1px solid #E0D6C8;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.35s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+}
+
+/* Styl zdjęć */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    filter: brightness(0.85) contrast(1.1) saturate(1.05);
+    transition: 0.4s ease;
+    border: 2px solid #C9A46A20;
+}
+
+/* Overlay na zdjęciu */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.05));
+    border-radius: 14px;
+    pointer-events: none;
+    transition: 0.4s ease;
+}
+
+.card:hover::before {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.1));
+}
+
+/* Efekt premium po najechaniu */
+.card:hover img {
+    filter: brightness(0.75) contrast(1.2);
+    transform: scale(1.04);
+    border-color: #E0202B60;
+}
