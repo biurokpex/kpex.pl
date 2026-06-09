@@ -48,7 +48,7 @@ nav a:hover {
 
 /* HERO */
 .hero {
-    background: url("img/Fit-out.png") center/cover no-repeat;
+    background: url("Fit-out.png") center/cover no-repeat;
     color: #fff;
     text-align: center;
     padding: 160px 20px;
