@@ -238,3 +238,12 @@ section {
         align-items: center;
     }
 }
+/* LOGO W STOPCE — CZERWONY GLOW */
+.footer-logo {
+    filter: drop-shadow(0 0 12px #E0202B);
+    transition: 0.3s ease;
+}
+
+.footer-logo:hover {
+    filter: drop-shadow(0 0 18px #ff2a3a);
+}
