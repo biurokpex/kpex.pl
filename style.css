@@ -29,14 +29,13 @@ header {
 
 nav {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
 nav a {
     text-decoration: none;
     color: #2A2A2A;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-weight: 500;
@@ -46,31 +45,9 @@ nav a:hover {
     color: #E0202B;
 }
 
-.lang-switch {
-    display: flex;
-    gap: 8px;
-}
-
-.lang-switch button {
-    padding: 6px 12px;
-    border-radius: 4px;
-    border: 1px solid #C9A46A;
-    background: #F7F4EF;
-    cursor: pointer;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-}
-
-.lang-switch button.active {
-    background: #E0202B;
-    color: #fff;
-    border-color: #E0202B;
-}
-
 /* HERO */
 .hero {
-    background: url("img/Fit-out.png") center/cover no-repeat;
+    background: url("Fit-out.png") center/cover no-repeat;
     color: #fff;
     text-align: center;
     padding: 160px 20px;
@@ -161,13 +138,13 @@ h2 {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    filter: brightness(0.85);
+    filter: brightness(0.9);
     transition: 0.4s ease;
 }
 
 .card:hover img {
-    filter: brightness(0.75);
-    transform: scale(1.04);
+    filter: brightness(0.8);
+    transform: scale(1.03);
 }
 
 .card h3 {
@@ -183,6 +160,20 @@ h2 {
     margin: 0 20px 20px 20px;
 }
 
+/* O NAS */
+.about {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
 /* KONTAKT */
 .contact-box {
     display: grid;
@@ -196,24 +187,12 @@ h2 {
     margin-bottom: 15px;
 }
 
-.contact-info p {
-    font-size: 15px;
-    margin-bottom: 8px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
 .contact-form input,
 .contact-form textarea {
     padding: 10px 12px;
     border-radius: 6px;
     border: 1px solid #D0C4B5;
     font-size: 14px;
-    font-family: inherit;
     background: #FFF;
 }
 
@@ -241,11 +220,9 @@ h2 {
 .footer-logo {
     height: 120px;
     margin-bottom: 15px;
-    filter: brightness(1.25) contrast(1.15) drop-shadow(0 0 6px rgba(224, 32, 43, 0.55));
 }
 
 .footer-col h4 {
-    font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
     margin-bottom: 15px;
     color: #E0202B;
@@ -281,6 +258,7 @@ h2 {
 
     nav {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .hero {
@@ -291,11 +269,7 @@ h2 {
         font-size: 30px;
     }
 
-    .hero p {
-        font-size: 15px;
-    }
-
-    .card img {
-        height: 200px;
+    .about {
+        grid-template-columns: 1fr;
     }
 }
