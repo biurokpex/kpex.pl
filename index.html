@@ -5,30 +5,307 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KPEX Sp. z o.o. — Profesjonalne Usługi Fit-Out i Budowlane</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #F7F4EF;
+    color: #2A2A2A;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EFE6DD;
+    border-bottom: 1px solid #C9A46A;
+}
+
+.logo {
+    height: 140px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2A2A2A;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #E0202B;
+}
+
+/* HERO */
+.hero {
+    background: url("img/Fit-out.png") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 160px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #E0202B;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #b81822;
+}
+
+/* SEKCJE */
+section {
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 25px;
+    color: #2A2A2A;
+    text-align: center;
+}
+
+/* GRID USŁUG */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* KARTY */
+.card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    border: 1px solid #E0D6C8;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.35s ease;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    filter: brightness(0.85);
+    transition: 0.4s ease;
+}
+
+.card:hover img {
+    filter: brightness(0.75);
+    transform: scale(1.04);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 18px 20px 10px 20px;
+    color: #E0202B;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.card p {
+    font-size: 16px;
+    color: #444;
+    margin: 0 20px 20px 20px;
+}
+
+/* DLACZEGO MY */
+#why-us {
+    background: #EFE6DD;
+    padding: 80px 20px;
+    border-top: 1px solid #C9A46A;
+    border-bottom: 1px solid #C9A46A;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.why-item {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #E0D6C8;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.why-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+}
+
+.why-item h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: #E0202B;
+    margin-bottom: 12px;
+}
+
+.why-item p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* STOPKA PREMIUM — CIEMNA */
+.footer {
+    background: #2A2A2A;
+    color: #FFFFFF;
+    padding: 60px 20px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
+}
+
+.footer-logo {
+    height: 120px;
+    margin-bottom: 15px;
+    filter: brightness(1.25) contrast(1.15) drop-shadow(0 0 6px rgba(224, 32, 43, 0.55));
+}
+
+.footer-col h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #E0202B;
+}
+
+.footer-col a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.footer-col a:hover {
+    color: #E0202B;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #C9A46A;
+    font-size: 14px;
+    color: #CCCCCC;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-    <img src="logo.png" class="logo" alt="KPEX Logo">
+    <a href="#"><img src="img/logo.png" class="logo" alt="KPEX Logo"></a>
     <nav>
         <a href="#services">Usługi</a>
-        <a href="#why-us">Dlaczego my</a>
+        <a href="#realizacje">Realizacje</a>
         <a href="#about">O nas</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#kontakt">Kontakt</a>
     </nav>
 </header>
 
 <section class="hero">
-    <div class="hero-content">
+    <div class="hero-content" data-aos="fade-up">
         <h1>Profesjonalne Usługi Fit‑Out i Budowlane</h1>
         <p>Kompleksowe wsparcie w pozyskiwaniu inwestycji oraz realizacji projektów.</p>
-        <a href="#contact" class="button">Skontaktuj się z nami</a>
+        <a href="#kontakt" class="button">Skontaktuj się z nami</a>
     </div>
 </section>
 
@@ -37,76 +314,67 @@
         <h2>Nasze Usługi</h2>
         <div class="grid">
 
-            <div class="card">
-                <img src="Fit-out.png" alt="Fit out">
+            <div class="card" data-aos="fade-up">
+                <img src="img/Fit-out.png" alt="">
                 <h3>FIT‑OUT</h3>
                 <p>Kompleksowe wykończenia wnętrz komercyjnych i przemysłowych.</p>
             </div>
 
-            <div class="card">
-                <img src="Brukarstwo.png" alt="Brukarstwo">
+            <div class="card" data-aos="fade-up">
+                <img src="img/Brukarstwo.png" alt="">
                 <h3>BRUKARSTWO</h3>
                 <p>Układanie kostki brukowej: place, chodniki, podjazdy i drogi.</p>
             </div>
 
-            <div class="card">
-                <img src="Czyszczenie-kostki-brukowej.png" alt="Czyszczenie kostki brukowej">
+            <div class="card" data-aos="fade-up">
+                <img src="img/Czyszczenie-kostki-brukowej.png" alt="">
                 <h3>CZYSZCZENIE KOSTKI BRUKOWEJ</h3>
                 <p>Usuwanie zabrudzeń, mchu i plam. Przywracanie estetyki nawierzchni.</p>
             </div>
 
-            <div class="card">
-                <img src="Okna-i-drzwi.png" alt="Okna i drzwi">
+            <div class="card" data-aos="fade-up">
+                <img src="img/Okna-i-drzwi.png" alt="">
                 <h3>OKNA I DRZWI</h3>
                 <p>Nowoczesne rozwiązania dopasowane do Twoich potrzeb.</p>
             </div>
 
-            <div class="card">
-                <img src="Serswis-okien-i-drzwi.png" alt="Serwis okien i drzwi">
+            <div class="card" data-aos="fade-up">
+                <img src="img/Serswis-okien-i-drzwi.png" alt="">
                 <h3>SERWIS OKIEN I DRZWI</h3>
                 <p>Profesjonalny serwis okien i drzwi w obiektach komercyjnych i przemysłowych.</p>
             </div>
 
-            <div class="card">
-                <img src="Ogrodzenia.png" alt="Ogrodzenia">
+            <div class="card" data-aos="fade-up">
+                <img src="img/Ogrodzenia.png" alt="">
                 <h3>OGRODZENIA</h3>
                 <p>Trwałe i estetyczne ogrodzenia dla posesji i obiektów przemysłowych.</p>
-            </div>
-
-            <div class="card">
-                <img src="O-nas.png" alt="O nas">
-                <h3>BUSINESS DEVELOPMENT</h3>
-                <p>Pozyskiwanie kontraktów fit‑out i budowlanych, rozwój relacji z inwestorami.</p>
             </div>
 
         </div>
     </div>
 </section>
 
-<section id="why-us">
+<section id="realizacje">
     <div class="container">
-        <h2>Dlaczego warto wybrać KPEX?</h2>
+        <h2>Realizacje</h2>
+        <div class="grid">
 
-        <div class="why-grid">
-
-            <div class="why-item">
-                <h3>Doświadczenie</h3>
-                <p>Realizujemy projekty fit‑out i budowlane dla firm w całej Polsce.</p>
+            <div class="card" data-aos="fade-up">
+                <img src="img/Fit-out.png" alt="">
+                <h3>Realizacja Fit‑Out</h3>
+                <p>Kompleksowy projekt wykończenia biura klasy A.</p>
             </div>
 
-            <div class="why-item">
-                <h3>Terminowość</h3>
-                <p>Pracujemy według harmonogramu i dotrzymujemy ustalonych terminów.</p>
+            <div class="card" data-aos="fade-up">
+                <img src="img/Brukarstwo.png" alt="">
+                <h3>Układanie kostki</h3>
+                <p>Realizacja placu i podjazdu dla inwestora prywatnego.</p>
             </div>
 
-            <div class="why-item">
-                <h3>Jakość</h3>
-                <p>Stawiamy na solidne wykonanie i sprawdzone technologie.</p>
-            </div>
-
-            <div class="why-item">
-                <h3>Kompleksowość</h3>
-                <p>Od pozyskania inwestycji po realizację i serwis — wszystko w jednym miejscu.</p>
+            <div class="card" data-aos="fade-up">
+                <img src="img/Ogrodzenia.png" alt="">
+                <h3>Ogrodzenie posesji</h3>
+                <p>Nowoczesne ogrodzenie panelowe z montażem.</p>
             </div>
 
         </div>
@@ -114,18 +382,29 @@
 </section>
 
 <section id="about">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <h2>O nas</h2>
         <p>KPEX Sp. z o.o. to firma specjalizująca się w usługach fit‑out, budowlanych i serwisowych. Wspieramy inwestorów, generalnych wykonawców i firmy w realizacji projektów na najwyższym poziomie.</p>
     </div>
 </section>
 
-<section id="contact">
-    <div class="container">
-        <h2>Kontakt</h2>
-        <p>📧 biuro.kpex@gmail.com</p>
-        <p>📞 530 444 225</p>
-        <p>📍 Warszawa, Polska</p>
+<section id="kontakt">
+    <div class="container contact-box">
+
+        <div class="contact-info">
+            <h2>Skontaktuj się z nami</h2>
+            <p>📧 biuro.kpex@gmail.com</p>
+            <p>📞 530 444 225</p>
+            <p>📍 Warszawa</p>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Imię i nazwisko" required>
+            <input type="email" placeholder="Adres e-mail" required>
+            <textarea placeholder="Wiadomość" required></textarea>
+            <button type="submit" class="button">Wyślij</button>
+        </form>
+
     </div>
 </section>
 
@@ -133,16 +412,16 @@
     <div class="footer-container">
 
         <div class="footer-col">
-            <img src="logo.png" class="footer-logo" alt="KPEX Logo">
+            <img src="img/logo.png" class="footer-logo" alt="KPEX Logo">
             <p>Profesjonalne usługi fit‑out, budowlane i serwisowe.</p>
         </div>
 
         <div class="footer-col">
             <h4>Menu</h4>
             <a href="#services">Usługi</a>
-            <a href="#why-us">Dlaczego my</a>
+            <a href="#realizacje">Realizacje</a>
             <a href="#about">O nas</a>
-            <a href="#contact">Kontakt</a>
+            <a href="#kontakt">Kontakt</a>
         </div>
 
         <div class="footer-col">
@@ -158,6 +437,9 @@
         © 2024 KPEX Sp. z o.o. — Wszystkie prawa zastrzeżone
     </div>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 
 </body>
 </html>
