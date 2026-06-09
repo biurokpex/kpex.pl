@@ -49,7 +49,7 @@ nav a {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.35); /* delikatniejsze przyciemnienie */
+    background: rgba(0,0,0,0.35);
 }
 
 .hero-content {
@@ -85,22 +85,39 @@ section {
     text-align: center;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 }
 
 /* ZDJĘCIA — BEZ UCIĘĆ */
 .card img {
     width: 100%;
-    height: auto;
-    aspect-ratio: 4/3;
-    object-fit: contain;
-    background-color: #fff;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
 }
 
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* TEKSTY W KARTACH */
 .card h3 {
     padding: 15px 10px 5px;
     color: #E0202B;
