@@ -47,40 +47,26 @@ nav a:hover {
     color: #E0202B;
 }
 
-/* HERO */
+/* HERO — POPRAWIONY */
 .hero {
     text-align: center;
-    padding: 120px 20px;
-    background: #EFE6DD;
+    padding: 140px 20px;
+    background: url("img/Fit-out.png") center/cover no-repeat;
     border-bottom: 1px solid #C9A46A;
+    color: #fff;
 }
 
 .hero h1 {
     font-size: 48px;
     font-family: 'Cormorant Garamond', serif;
     margin-bottom: 20px;
-    color: #2A2A2A;
+    color: #fff;
 }
 
 .hero p {
     font-size: 20px;
     margin-bottom: 30px;
-    color: #444;
-}
-
-.button {
-    display: inline-block;
-    padding: 14px 28px;
-    background: #E0202B;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 18px;
-    letter-spacing: 0.05em;
-}
-
-.button:hover {
-    background: #b81822;
+    color: #f5f5f5;
 }
 
 /* SEKCJE */
@@ -107,7 +93,7 @@ h2 {
     gap: 25px;
 }
 
-/* KARTY PREMIUM — JEDYNA WERSJA */
+/* KARTY PREMIUM */
 .card {
     background: #FFFFFF;
     padding: 0;
@@ -136,7 +122,6 @@ h2 {
 .card:nth-child(5) { animation-delay: 0.5s; }
 .card:nth-child(6) { animation-delay: 0.6s; }
 .card:nth-child(7) { animation-delay: 0.7s; }
-.card:nth-child(8) { animation-delay: 0.8s; }
 
 @keyframes fadeInUp {
     to {
@@ -153,10 +138,9 @@ h2 {
     border-radius: 14px;
     filter: brightness(0.85) contrast(1.1) saturate(1.05);
     transition: 0.4s ease;
-    border: none;
 }
 
-/* MOCNY OVERLAY PREMIUM */
+/* OVERLAY */
 .card::before {
     content: "";
     position: absolute;
@@ -182,7 +166,6 @@ h2 {
     );
 }
 
-/* Hover zdjęcia */
 .card:hover img {
     filter: brightness(0.75) contrast(1.2);
     transform: scale(1.04);
@@ -194,7 +177,6 @@ h2 {
     margin: 18px 20px 10px 20px;
     color: #E0202B;
     font-family: 'Cormorant Garamond', serif;
-    letter-spacing: 0.03em;
 }
 
 .card p {
