@@ -27,7 +27,7 @@ body {
     text-align: center;
     color: white;
     position: relative;
-    background-color: #333; /* fallback gdy obraz się nie wczyta */
+    background-color: #333;
 }
 .hero::before {
     content: "";
