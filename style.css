@@ -7,7 +7,7 @@ body {
 
 /* HERO baner */
 .hero {
-    background-image: url("img/baner1.png"); /* ← nazwa pliku z folderu img */
+    background-image: url("img/baner1.png"); /* upewnij się, że plik jest w folderze img */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,6 +19,7 @@ body {
     color: white;
     position: relative;
     overflow: hidden;
+    background-color: #7a7a7a; /* fallback, gdy obraz się nie wczyta */
 }
 
 .hero::before {
