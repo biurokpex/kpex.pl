@@ -4,35 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>KPEX | Construction & Fit-out</title>
+<title>KPEX | Construction & Fit-out Warszawa</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- TOPBAR -->
 <header class="topbar">
     <div class="logo">KPEX</div>
 
     <nav>
         <a href="#about">O nas</a>
         <a href="#services">Usługi</a>
-        <a href="#contact" class="cta-nav">Kontakt</a>
+        <a href="#contact" class="cta-nav">Wyceń projekt</a>
     </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-    <img src="baner1.png" alt="Construction KPEX">
+    <img src="baner1.png" alt="KPEX construction Warszawa">
 
     <div class="hero-content">
         <h1>Budujemy przestrzenie, które działają</h1>
-        <p>Fit-out • Brukarstwo • Infrastruktura • Warszawa i okolice</p>
+        <p>Fit-out • Brukarstwo • Ogrodzenia • Serwis | Warszawa i okolice</p>
 
-        <a href="#contact" class="button">Zamów wycenę</a>
+        <a href="#contact" class="button">Zamów darmową wycenę</a>
     </div>
+</section>
+
+<!-- CTA MINI -->
+<section class="cta-mini">
+    <p>Odpowiadamy w 24h • Darmowa wycena • Bez zobowiązań</p>
 </section>
 
 <!-- ABOUT -->
@@ -62,41 +67,52 @@
     </div>
 </section>
 
-<!-- CTA -->
+<!-- STRONG CTA -->
 <section class="cta">
     <h2>Masz projekt?</h2>
     <p>Przygotujemy wycenę w 24h</p>
-    <a href="#contact" class="button">Skontaktuj się</a>
+    <a href="#contact" class="button">Przejdź do formularza</a>
 </section>
 
-<!-- CONTACT -->
+<!-- CONTACT (LEAD FORM) -->
 <section id="contact" class="section">
     <div class="container">
 
-        <h2>Kontakt</h2>
+        <h2>Zamów wycenę</h2>
 
         <form>
             <input type="text" placeholder="Imię i nazwisko" required>
-            <input type="tel" placeholder="Telefon" required>
+            <input type="tel" placeholder="Telefon (obowiązkowy)" required>
             <input type="email" placeholder="E-mail">
 
-            <select>
-                <option>Wybierz usługę</option>
+            <select required>
+                <option value="">Wybierz usługę</option>
                 <option>Fit-out</option>
                 <option>Brukarstwo</option>
                 <option>Ogrodzenia</option>
+                <option>Serwis</option>
             </select>
 
-            <textarea placeholder="Opisz projekt"></textarea>
+            <textarea placeholder="Opisz projekt (im więcej szczegółów, tym dokładniejsza wycena)"></textarea>
 
             <button type="submit">Wyślij zapytanie</button>
         </form>
 
+        <div class="contact-info">
+            <p>
+                KPEX Sp. z o.o.<br>
+                Warszawa<br>
+                tel: 500 000 000<br>
+                biuro@kpex.pl
+            </p>
+        </div>
+
     </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-    © 2026 KPEX
+    © 2026 KPEX Sp. z o.o.
 </footer>
 
 </body>
