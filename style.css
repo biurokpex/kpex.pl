@@ -1,7 +1,3 @@
-/* =========================
-   BASE
-========================= */
-
 *{
     margin:0;
     padding:0;
@@ -9,142 +5,110 @@
 }
 
 body{
-    font-family:'Inter', Arial, sans-serif;
+    font-family:'Inter', sans-serif;
     color:#111;
     background:#fff;
 }
 
-/* =========================
-   TOPBAR
-========================= */
+/* TOPBAR */
 
 .topbar{
     position:fixed;
     top:0;
     left:0;
     width:100%;
-    height:70px;
+    height:72px;
+    background:#fff;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:0 30px;
-    background:#fff;
-    border-bottom:1px solid #eaeaea;
-    z-index:9999;
+    border-bottom:1px solid #eee;
+    z-index:999;
 }
 
-    .logo{
-    font-size:22px;
+.logo{
     font-weight:800;
-    color:#111;
-    letter-spacing:2px;
-}
+    font-size:20px;
 }
 
 nav a{
-    margin-left:18px;
+    margin-left:20px;
     text-decoration:none;
     color:#111;
     font-weight:600;
-    font-size:14px;
 }
 
-.cta-nav{
+.cta{
     background:#111;
     color:#fff !important;
     padding:10px 14px;
-    border-radius:5px;
+    border-radius:6px;
 }
 
-/* =========================
-   HERO (NAPRAWIONY - NIE MA BYĆ MAŁY)
-========================= */
+/* HERO */
 
 .hero{
-    margin-top:70px;
-    height:80vh;
-    min-height:600px;
+    margin-top:72px;
+    height:85vh;
     position:relative;
-    overflow:hidden;
 }
 
 .hero img{
     width:100%;
     height:100%;
     object-fit:cover;
-    position:absolute;
-    top:0;
-    left:0;
 }
 
-/* CIEMNY FILTR = CZYTELNOŚĆ */
 .hero::after{
     content:"";
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,0.55);
+    background:rgba(0,0,0,0.5);
 }
 
 .hero-content{
-    position:relative;
-    z-index:2;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
     color:#fff;
-    max-width:800px;
-    padding:140px 30px;
+    text-align:center;
+    width:90%;
 }
 
 .hero h1{
-    font-size:56px;
+    font-size:52px;
     font-weight:800;
-    line-height:1.1;
 }
 
 .hero p{
-    margin-top:18px;
-    font-size:20px;
-    opacity:0.95;
+    margin-top:15px;
+    font-size:18px;
+    opacity:0.9;
 }
 
 /* BUTTON */
 
-.button{
+.btn{
     display:inline-block;
     margin-top:25px;
-    padding:16px 32px;
+    padding:15px 28px;
     background:#fff;
     color:#111;
     font-weight:700;
     text-decoration:none;
     border-radius:6px;
-    transition:0.2s;
 }
 
-.button:hover{
-    transform:translateY(-2px);
-}
-
-/* =========================
-   CTA MINI
-========================= */
-
-.cta-mini{
-    text-align:center;
-    padding:18px;
-    background:#f3f4f6;
-    font-size:14px;
-    font-weight:500;
-}
-
-/* =========================
-   SEKCJE
-========================= */
+/* SECTIONS */
 
 .section{
-    padding:100px 30px;
+    padding:100px 25px;
 }
 
-.section:nth-of-type(even){
-    background:#fafafa;
+.light{
+    background:#f7f7f7;
 }
 
 .container{
@@ -152,141 +116,88 @@ nav a{
     margin:auto;
 }
 
-.section h2{
-    font-size:38px;
-    font-weight:800;
-    margin-bottom:30px;
+h2{
+    font-size:34px;
+    margin-bottom:25px;
 }
 
-/* =========================
-   KAFELKI (NAPRAWIONE - WIDOCZNE)
-========================= */
+/* GRID */
 
 .grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:22px;
+    gap:20px;
 }
 
 .card{
     background:#fff;
-    border:1px solid #ddd;
-    padding:35px;
+    border:1px solid #e5e5e5;
+    padding:40px;
     text-align:center;
     font-weight:700;
-    font-size:17px;
     border-radius:10px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.06);
-    transition:0.25s;
-}
-
-.card::before{
-    content:"";
-    display:block;
-    width:45px;
-    height:4px;
-    background:#111;
-    margin:0 auto 15px auto;
+    transition:0.2s;
 }
 
 .card:hover{
     transform:translateY(-6px);
     border-color:#111;
 }
-}
 
-/* =========================
-   CTA
-========================= */
+/* CTA */
 
 .cta{
-    text-align:center;
-    padding:90px 20px;
     background:#111;
     color:#fff;
+    text-align:center;
+    padding:90px 20px;
 }
 
-.cta p{
-    margin-top:10px;
-    opacity:0.85;
+.cta .btn{
+    background:#fff;
+    color:#111;
 }
 
-/* =========================
-   FORM
-========================= */
+/* FORM */
 
 form{
-    max-width:650px;
+    max-width:600px;
     margin:auto;
     display:flex;
     flex-direction:column;
-    gap:14px;
+    gap:12px;
 }
 
-input, select, textarea{
-    padding:16px;
+input, textarea{
+    padding:14px;
     border:1px solid #ddd;
-    font-size:15px;
     border-radius:6px;
-}
-
-textarea{
-    min-height:140px;
 }
 
 button{
-    padding:16px;
+    padding:14px;
     background:#111;
     color:#fff;
     border:none;
-    font-weight:700;
     border-radius:6px;
-    cursor:pointer;
+    font-weight:700;
 }
 
-/* =========================
-   CONTACT INFO
-========================= */
-
-.contact-info{
-    text-align:center;
-    margin-top:35px;
-    color:#333;
-    font-size:15px;
-}
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
-    padding:35px;
     text-align:center;
+    padding:30px;
     border-top:1px solid #eee;
     color:#777;
 }
 
-/* =========================
-   MOBILE (KLUCZ - FIX LEADY)
-========================= */
+/* MOBILE */
 
 @media(max-width:768px){
 
-    .hero{
-        height:65vh;
-        min-height:420px;
-    }
-
     .hero h1{
         font-size:30px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .hero-content{
-        padding:90px 20px;
     }
 
     .grid{
@@ -295,9 +206,5 @@ footer{
 
     nav{
         display:none;
-    }
-
-    .section{
-        padding:70px 20px;
     }
 }
