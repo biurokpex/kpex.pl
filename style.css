@@ -5,9 +5,10 @@
 }
 
 body{
-    font-family:'Inter', sans-serif;
+    font-family:'Inter', Arial, sans-serif;
     color:#111;
     background:#fff;
+    line-height:1.5;
 }
 
 /* TOPBAR */
@@ -18,18 +19,19 @@ body{
     left:0;
     width:100%;
     height:72px;
-    background:#fff;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 30px;
-    border-bottom:1px solid #eee;
-    z-index:999;
+    padding:0 25px;
+    background:#fff;
+    border-bottom:1px solid #eaeaea;
+    z-index:9999;
 }
 
 .logo{
-    font-weight:800;
     font-size:20px;
+    font-weight:800;
+    letter-spacing:2px;
 }
 
 nav a{
@@ -37,13 +39,6 @@ nav a{
     text-decoration:none;
     color:#111;
     font-weight:600;
-}
-
-.cta{
-    background:#111;
-    color:#fff !important;
-    padding:10px 14px;
-    border-radius:6px;
 }
 
 /* HERO */
@@ -72,8 +67,8 @@ nav a{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    color:#fff;
     text-align:center;
+    color:#fff;
     width:90%;
 }
 
@@ -85,7 +80,6 @@ nav a{
 .hero p{
     margin-top:15px;
     font-size:18px;
-    opacity:0.9;
 }
 
 /* BUTTON */
@@ -101,10 +95,15 @@ nav a{
     border-radius:6px;
 }
 
+.btn.dark{
+    background:#111;
+    color:#fff;
+}
+
 /* SECTIONS */
 
 .section{
-    padding:100px 25px;
+    padding:90px 25px;
 }
 
 .light{
@@ -153,11 +152,6 @@ h2{
     padding:90px 20px;
 }
 
-.cta .btn{
-    background:#fff;
-    color:#111;
-}
-
 /* FORM */
 
 form{
@@ -168,10 +162,15 @@ form{
     gap:12px;
 }
 
-input, textarea{
+input, select, textarea{
     padding:14px;
     border:1px solid #ddd;
     border-radius:6px;
+    font-size:15px;
+}
+
+textarea{
+    min-height:120px;
 }
 
 button{
@@ -179,8 +178,9 @@ button{
     background:#111;
     color:#fff;
     border:none;
-    border-radius:6px;
     font-weight:700;
+    border-radius:6px;
+    cursor:pointer;
 }
 
 /* FOOTER */
