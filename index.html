@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KPEX Sp. z o.o.</title>
+
+    <title>KPEX Sp. z o.o. | Usługi budowlane Warszawa</title>
+
+    <meta name="description" content="KPEX Sp. z o.o. – fit-out, brukarstwo, ogrodzenia i serwis w Warszawie. Szybka wycena inwestycji.">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="topbar">
-    <img src="logo.png" class="logo" alt="logo">
+    <img src="logo.png" class="logo" alt="KPEX logo">
 
     <nav>
         <a href="#about">O nas</a>
@@ -18,39 +23,99 @@
     </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
 
-    <img src="baner1.png" alt="baner" class="hero-img">
+    <img src="baner1.png" alt="usługi budowlane KPEX Warszawa" class="hero-img">
 
     <div class="hero-content">
         <h1>Profesjonalne usługi budowlane i fit-out</h1>
         <p>Realizacja inwestycji komercyjnych, przemysłowych i prywatnych.</p>
-        <a href="#services" class="button">Nasze usługi</a>
+
+        <a href="#contact" class="button">Zamów wycenę</a>
     </div>
 
 </section>
 
-<section id="about" class="about">
-    <h2>O nas</h2>
-    <p>KPEX Sp. z o.o. to zespół specjalistów...</p>
+<!-- CTA 1 -->
+<section class="quick-cta">
+    <h2>Potrzebujesz wyceny?</h2>
+    <p>Odpowiadamy w 24h</p>
+    <a href="#contact" class="button">Skontaktuj się</a>
 </section>
 
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>O nas</h2>
+    <p>KPEX Sp. z o.o. to zespół specjalistów realizujących inwestycje budowlane, fit-out i usługi zewnętrzne.</p>
+</section>
+
+<!-- SERVICES -->
 <section id="services" class="services">
     <h2>Nasze usługi</h2>
 
     <div class="grid">
-        <a href="fitout.html" class="box"><img src="Fit-out.png"><h3>Fit-out</h3></a>
-        <a href="brukarstwo.html" class="box"><img src="Brukarstwo.png"><h3>Brukarstwo</h3></a>
-        <a href="czyszczenie.html" class="box"><img src="Czyszczenie-kostki-brukowej.png"><h3>Czyszczenie</h3></a>
-        <a href="ogrodzenia.html" class="box"><img src="Ogrodzenia.png"><h3>Ogrodzenia</h3></a>
-        <a href="okna.html" class="box"><img src="Okna-i-drzwi.png"><h3>Okna i drzwi</h3></a>
-        <a href="serwis.html" class="box"><img src="Serswis-okien-i-drzwi.png"><h3>Serwis</h3></a>
+
+        <a href="fitout.html" class="box">
+            <img src="Fit-out.png" alt="Fit-out">
+            <h3>Fit-out</h3>
+        </a>
+
+        <a href="brukarstwo.html" class="box">
+            <img src="Brukarstwo.png" alt="Brukarstwo">
+            <h3>Brukarstwo</h3>
+        </a>
+
+        <a href="czyszczenie.html" class="box">
+            <img src="Czyszczenie-kostki-brukowej.png" alt="Czyszczenie kostki">
+            <h3>Czyszczenie</h3>
+        </a>
+
+        <a href="ogrodzenia.html" class="box">
+            <img src="Ogrodzenia.png" alt="Ogrodzenia">
+            <h3>Ogrodzenia</h3>
+        </a>
+
+        <a href="okna.html" class="box">
+            <img src="Okna-i-drzwi.png" alt="Okna i drzwi">
+            <h3>Okna i drzwi</h3>
+        </a>
+
+        <a href="serwis.html" class="box">
+            <img src="Serswis-okien-i-drzwi.png" alt="Serwis okien i drzwi">
+            <h3>Serwis</h3>
+        </a>
+
     </div>
 </section>
 
+<!-- CTA 2 -->
+<section class="quick-cta dark">
+    <h2>Masz projekt? Zrobimy wycenę</h2>
+    <a href="#contact" class="button">Przejdź do formularza</a>
+</section>
+
+<!-- CONTACT FORM -->
 <section id="contact" class="contact">
-    <h2>Kontakt</h2>
-    <p>KPEX Sp. z o.o.<br>Warszawa<br>tel: 500 000 000<br>biuro@kpex.pl</p>
+    <h2>Zamów wycenę</h2>
+
+    <form>
+        <input type="text" placeholder="Imię i nazwisko" required>
+        <input type="tel" placeholder="Telefon" required>
+        <input type="email" placeholder="E-mail">
+
+        <select required>
+            <option value="">Wybierz usługę</option>
+            <option>Fit-out</option>
+            <option>Brukarstwo</option>
+            <option>Ogrodzenia</option>
+            <option>Serwis</option>
+        </select>
+
+        <textarea placeholder="Opisz inwestycję"></textarea>
+
+        <button type="submit">Wyślij zapytanie</button>
+    </form>
 </section>
 
 <footer class="footer">
