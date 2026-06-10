@@ -8,52 +8,70 @@
 </head>
 <body>
 
-    <!-- Sekcja HERO -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Profesjonalne usługi fit‑out i budowlane</h1>
-            <p>Realizacja inwestycji komercyjnych i przemysłowych.</p>
-            <a href="#services" class="button">Zobacz ofertę</a>
-        </div>
-    </section>
+<header class="topbar">
+    <img src="logo.png" alt="KPEX" class="logo">
+</header>
 
-    <!-- Sekcja OFERTA -->
-    <section id="services" class="services">
-        <h2>Nasze usługi</h2>
-        <div class="service-box">
-            <h3>Fit‑out biur</h3>
-            <p>Kompleksowe wykończenia wnętrz biurowych pod klucz.</p>
-        </div>
-        <div class="service-box">
-            <h3>Remonty i modernizacje</h3>
-            <p>Profesjonalne prace budowlane i adaptacyjne.</p>
-        </div>
-        <div class="service-box">
-            <h3>Obsługa inwestycji</h3>
-            <p>Koordynacja projektów i nadzór techniczny.</p>
-        </div>
-    </section>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Profesjonalne usługi budowlane i fit‑out</h1>
+        <p>Realizacja inwestycji komercyjnych, przemysłowych i prywatnych.</p>
+        <a href="#services" class="button">Nasze usługi</a>
+    </div>
+</section>
 
-    <!-- Sekcja KONTAKT -->
-    <section id="contact" class="contact">
-        <h2>Kontakt</h2>
-        <p>KPEX Sp. z o.o.<br>
-        ul. Przykładowa 10, Warszawa<br>
+<section id="services" class="services">
+    <h2>Nasze usługi</h2>
+
+    <div class="grid">
+
+        <a href="fitout.html" class="box">
+            <img src="Fit-out.png" alt="">
+            <h3>Fit‑out</h3>
+        </a>
+
+        <a href="brukarstwo.html" class="box">
+            <img src="Brukarstwo.png" alt="">
+            <h3>Brukarstwo</h3>
+        </a>
+
+        <a href="czyszczenie.html" class="box">
+            <img src="Czyszczenie-kostki-brukowej.png" alt="">
+            <h3>Czyszczenie kostki</h3>
+        </a>
+
+        <a href="ogrodzenia.html" class="box">
+            <img src="Ogrodzenia.png" alt="">
+            <h3>Ogrodzenia</h3>
+        </a>
+
+        <a href="okna.html" class="box">
+            <img src="Okna-i-drzwi.png" alt="">
+            <h3>Okna i drzwi</h3>
+        </a>
+
+        <a href="serwis.html" class="box">
+            <img src="Serswis-okien-i-drzwi.png" alt="">
+            <h3>Serwis okien i drzwi</h3>
+        </a>
+
+        <a href="o-nas.html" class="box">
+            <img src="O-nas.png" alt="">
+            <h3>O nas</h3>
+        </a>
+
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Kontakt</h2>
+    <p>
+        KPEX Sp. z o.o.<br>
+        Warszawa<br>
         tel. 500 000 000<br>
-        e‑mail: biuro@kpex.pl</p>
-    </section>
-
-    <!-- Skrypt do płynnego przewijania -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+        e‑mail: biuro@kpex.pl
+    </p>
+</section>
 
 </body>
 </html>
