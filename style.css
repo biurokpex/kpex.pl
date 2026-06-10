@@ -103,33 +103,19 @@ body {
     margin-bottom: 15px;
 }
 
-/* CLIENTS */
-.clients {
-    background: #fff;
+/* KONTAKT */
+.contact {
+    background: #e30613;
+    color: white;
     padding: 60px 20px;
     text-align: center;
-}
-.clients-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
-}
-.clients-logos img {
-    height: 60px;
-    opacity: 0.8;
-    transition: 0.3s;
-}
-.clients-logos img:hover {
-    opacity: 1;
 }
 
-/* WHY */
-.why {
-    background: #f9f9f9;
-    padding: 60px 20px;
+/* FOOTER */
+.footer {
+    background: #000;
+    color: white;
     text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
-.why-grid {
-    display: grid;
