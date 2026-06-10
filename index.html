@@ -14,33 +14,37 @@
 
 <header class="topbar">
     <div class="logo">KPEX</div>
+
     <nav>
         <a href="#about">O nas</a>
         <a href="#services">Usługi</a>
-        <a href="#contact" class="cta">Kontakt</a>
+        <a href="#contact">Kontakt</a>
     </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-    <img src="baner1.png" alt="construction">
+    <img src="baner1.png" alt="budowa">
 
     <div class="hero-content">
         <h1>Budujemy przestrzenie, które działają</h1>
-        <p>Fit-out • Brukarstwo • Infrastruktura • Warszawa</p>
+        <p>Fit-out • Brukarstwo • Ogrodzenia • Warszawa i okolice</p>
         <a href="#contact" class="btn">Zamów wycenę</a>
     </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="section">
     <div class="container">
         <h2>O nas</h2>
         <p>
-            Realizujemy inwestycje budowlane i fit-out dla firm i klientów prywatnych.
-            Stawiamy na jakość, terminowość i pełną realizację projektów.
+            KPEX realizuje inwestycje budowlane dla klientów komercyjnych i prywatnych.
+            Stawiamy na jakość, terminowość i profesjonalną realizację projektów.
         </p>
     </div>
 </section>
 
+<!-- SERVICES -->
 <section id="services" class="section light">
     <div class="container">
         <h2>Usługi</h2>
@@ -49,37 +53,48 @@
             <div class="card">Fit-out</div>
             <div class="card">Brukarstwo</div>
             <div class="card">Ogrodzenia</div>
-            <div class="card">Okna</div>
+            <div class="card">Okna i drzwi</div>
             <div class="card">Serwis</div>
             <div class="card">Czyszczenie</div>
         </div>
     </div>
 </section>
 
+<!-- CTA -->
 <section class="cta">
     <h2>Masz projekt?</h2>
     <p>Odpowiadamy w 24h</p>
     <a href="#contact" class="btn dark">Skontaktuj się</a>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="section">
     <div class="container">
 
         <h2>Kontakt</h2>
 
         <form>
-            <input placeholder="Imię i nazwisko">
-            <input placeholder="Telefon">
-            <input placeholder="Email">
+            <input type="text" placeholder="Imię i nazwisko" required>
+            <input type="tel" placeholder="Telefon" required>
+            <input type="email" placeholder="Email">
+
+            <select>
+                <option>Wybierz usługę</option>
+                <option>Fit-out</option>
+                <option>Brukarstwo</option>
+                <option>Ogrodzenia</option>
+            </select>
+
             <textarea placeholder="Opisz projekt"></textarea>
-            <button>Wyślij</button>
+
+            <button type="submit">Wyślij zapytanie</button>
         </form>
 
     </div>
 </section>
 
 <footer>
-    © 2026 KPEX
+    © 2026 KPEX Sp. z o.o.
 </footer>
 
 </body>
