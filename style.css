@@ -12,7 +12,6 @@ body{
     font-family:'Inter', Arial, sans-serif;
     color:#111;
     background:#fff;
-    line-height:1.6;
 }
 
 /* =========================
@@ -28,46 +27,42 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 30px;
+    padding:0 25px;
     background:#fff;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #eaeaea;
     z-index:9999;
 }
 
 .logo{
-    font-size:20px;
-    font-weight:700;
+    font-size:22px;
+    font-weight:800;
     letter-spacing:2px;
+    color:#111;
 }
 
 nav a{
-    margin-left:20px;
+    margin-left:18px;
     text-decoration:none;
     color:#111;
-    font-weight:500;
+    font-weight:600;
+    font-size:14px;
 }
 
-nav a:hover{
-    opacity:0.6;
-}
-
-/* CTA NAV */
 .cta-nav{
     background:#111;
     color:#fff !important;
     padding:10px 14px;
-    border-radius:4px;
+    border-radius:5px;
 }
 
 /* =========================
-   HERO
+   HERO (NAPRAWIONY - NIE MA BYĆ MAŁY)
 ========================= */
 
 .hero{
     margin-top:70px;
-    height:70vh;
-    min-height:520px;
-    max-height:650px;
+    height:80vh;
+    min-height:600px;
     position:relative;
     overflow:hidden;
 }
@@ -81,30 +76,32 @@ nav a:hover{
     left:0;
 }
 
+/* CIEMNY FILTR = CZYTELNOŚĆ */
 .hero::after{
     content:"";
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,0.45);
+    background:rgba(0,0,0,0.55);
 }
 
 .hero-content{
     position:relative;
     z-index:2;
     color:#fff;
-    max-width:750px;
-    padding:120px 30px;
+    max-width:800px;
+    padding:140px 30px;
 }
 
 .hero h1{
-    font-size:52px;
+    font-size:56px;
+    font-weight:800;
     line-height:1.1;
 }
 
 .hero p{
-    margin-top:15px;
-    font-size:18px;
-    opacity:0.9;
+    margin-top:18px;
+    font-size:20px;
+    opacity:0.95;
 }
 
 /* BUTTON */
@@ -112,13 +109,13 @@ nav a:hover{
 .button{
     display:inline-block;
     margin-top:25px;
-    padding:14px 28px;
+    padding:16px 32px;
     background:#fff;
     color:#111;
+    font-weight:700;
     text-decoration:none;
-    font-weight:600;
-    border-radius:4px;
-    transition:0.3s;
+    border-radius:6px;
+    transition:0.2s;
 }
 
 .button:hover{
@@ -132,17 +129,17 @@ nav a:hover{
 .cta-mini{
     text-align:center;
     padding:18px;
-    background:#f4f6f8;
+    background:#f3f4f6;
     font-size:14px;
-    color:#333;
+    font-weight:500;
 }
 
 /* =========================
-   SECTIONS
+   SEKCJE
 ========================= */
 
 .section{
-    padding:90px 30px;
+    padding:100px 30px;
 }
 
 .section:nth-of-type(even){
@@ -155,60 +152,63 @@ nav a:hover{
 }
 
 .section h2{
-    font-size:34px;
-    margin-bottom:25px;
-    letter-spacing:-0.5px;
+    font-size:38px;
+    font-weight:800;
+    margin-bottom:30px;
 }
 
 /* =========================
-   SERVICES GRID
+   KAFELKI (NAPRAWIONE - WIDOCZNE)
 ========================= */
 
 .grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:20px;
+    gap:22px;
 }
 
 .card{
-    background:#fff;
-    border:1px solid #e6e6e6;
-    padding:40px;
+    background:#ffffff;
+    border:2px solid #ececec;
+    padding:45px;
     text-align:center;
-    font-weight:600;
-    border-radius:8px;
-    transition:0.3s;
-    box-shadow:0 10px 25px rgba(0,0,0,0.04);
+    font-weight:700;
+    font-size:18px;
+    border-radius:10px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.06);
+    transition:0.25s;
+    color:#111;
 }
 
+/* widoczny akcent */
 .card::before{
     content:"";
     display:block;
-    width:40px;
+    width:50px;
     height:4px;
     background:#111;
-    margin:0 auto 15px auto;
+    margin:0 auto 18px auto;
 }
 
 .card:hover{
-    transform:translateY(-6px);
+    transform:translateY(-8px);
     border-color:#111;
 }
 
 /* =========================
-   CTA SECTION
+   CTA
 ========================= */
 
 .cta{
     text-align:center;
-    padding:80px 20px;
+    padding:90px 20px;
     background:#111;
     color:#fff;
 }
 
-.cta .button{
-    background:#fff;
-    color:#111;
+.cta p{
+    margin-top:10px;
+    opacity:0.85;
 }
 
 /* =========================
@@ -216,41 +216,43 @@ nav a:hover{
 ========================= */
 
 form{
-    max-width:600px;
+    max-width:650px;
     margin:auto;
     display:flex;
     flex-direction:column;
-    gap:12px;
+    gap:14px;
 }
 
 input, select, textarea{
-    padding:14px;
+    padding:16px;
     border:1px solid #ddd;
-    font-family:inherit;
-    border-radius:4px;
+    font-size:15px;
+    border-radius:6px;
 }
 
 textarea{
-    min-height:120px;
-    resize:vertical;
+    min-height:140px;
 }
 
 button{
-    padding:14px;
+    padding:16px;
     background:#111;
     color:#fff;
     border:none;
+    font-weight:700;
+    border-radius:6px;
     cursor:pointer;
-    font-weight:600;
-    border-radius:4px;
 }
 
-/* CONTACT INFO */
+/* =========================
+   CONTACT INFO
+========================= */
 
 .contact-info{
     text-align:center;
-    margin-top:30px;
-    color:#444;
+    margin-top:35px;
+    color:#333;
+    font-size:15px;
 }
 
 /* =========================
@@ -258,29 +260,33 @@ button{
 ========================= */
 
 footer{
-    padding:30px;
+    padding:35px;
     text-align:center;
     border-top:1px solid #eee;
-    font-size:14px;
-    color:#666;
+    color:#777;
 }
 
 /* =========================
-   MOBILE
+   MOBILE (KLUCZ - FIX LEADY)
 ========================= */
 
 @media(max-width:768px){
 
     .hero{
-        height:60vh;
+        height:65vh;
+        min-height:420px;
     }
 
     .hero h1{
         font-size:30px;
     }
 
+    .hero p{
+        font-size:16px;
+    }
+
     .hero-content{
-        padding:80px 20px;
+        padding:90px 20px;
     }
 
     .grid{
@@ -292,6 +298,6 @@ footer{
     }
 
     .section{
-        padding:60px 20px;
+        padding:70px 20px;
     }
 }
