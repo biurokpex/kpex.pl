@@ -56,6 +56,21 @@ body {
     font-weight: bold;
 }
 
+/* ABOUT */
+.about {
+    background: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+.about h2 {
+    margin-bottom: 20px;
+}
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
 /* USŁUGI */
 .services {
     padding: 60px 20px;
@@ -88,10 +103,40 @@ body {
     margin-bottom: 15px;
 }
 
+/* WHY */
+.why {
+    background: #f0f0f0;
+    padding: 60px 20px;
+}
+.why h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.why ul {
+    max-width: 600px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+.why li {
+    padding: 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
 /* KONTAKT */
 .contact {
     background: #e30613;
     color: white;
     padding: 60px 20px;
     text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
