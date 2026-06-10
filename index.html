@@ -1,125 +1,102 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>KPEX Sp. z o.o. | Usługi budowlane Warszawa</title>
+<title>KPEX | Construction & Fit-out</title>
 
-    <meta name="description" content="KPEX Sp. z o.o. – fit-out, brukarstwo, ogrodzenia i serwis w Warszawie. Szybka wycena inwestycji.">
+<link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header class="topbar">
-    <img src="logo.png" class="logo" alt="KPEX logo">
+    <div class="logo">KPEX</div>
 
     <nav>
         <a href="#about">O nas</a>
         <a href="#services">Usługi</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#contact" class="cta-nav">Kontakt</a>
     </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-
-    <img src="baner1.png" alt="usługi budowlane KPEX Warszawa" class="hero-img">
+    <img src="baner1.png" alt="Construction KPEX">
 
     <div class="hero-content">
-        <h1>Profesjonalne usługi budowlane i fit-out</h1>
-        <p>Realizacja inwestycji komercyjnych, przemysłowych i prywatnych.</p>
+        <h1>Budujemy przestrzenie, które działają</h1>
+        <p>Fit-out • Brukarstwo • Infrastruktura • Warszawa i okolice</p>
 
         <a href="#contact" class="button">Zamów wycenę</a>
     </div>
-
-</section>
-
-<!-- CTA 1 -->
-<section class="quick-cta">
-    <h2>Potrzebujesz wyceny?</h2>
-    <p>Odpowiadamy w 24h</p>
-    <a href="#contact" class="button">Skontaktuj się</a>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="about">
-    <h2>O nas</h2>
-    <p>KPEX Sp. z o.o. to zespół specjalistów realizujących inwestycje budowlane, fit-out i usługi zewnętrzne.</p>
+<section id="about" class="section">
+    <div class="container">
+        <h2>O nas</h2>
+        <p>
+            KPEX realizuje inwestycje budowlane i fit-out dla klientów komercyjnych i prywatnych.
+            Stawiamy na terminowość, jakość i pełną realizację projektów.
+        </p>
+    </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="services">
-    <h2>Nasze usługi</h2>
+<section id="services" class="section dark">
+    <div class="container">
+        <h2>Usługi</h2>
 
-    <div class="grid">
+        <div class="grid">
+            <div class="card">Fit-out</div>
+            <div class="card">Brukarstwo</div>
+            <div class="card">Ogrodzenia</div>
+            <div class="card">Okna i drzwi</div>
+            <div class="card">Serwis</div>
+            <div class="card">Czyszczenie</div>
+        </div>
+    </div>
+</section>
 
-        <a href="fitout.html" class="box">
-            <img src="Fit-out.png" alt="Fit-out">
-            <h3>Fit-out</h3>
-        </a>
+<!-- CTA -->
+<section class="cta">
+    <h2>Masz projekt?</h2>
+    <p>Przygotujemy wycenę w 24h</p>
+    <a href="#contact" class="button">Skontaktuj się</a>
+</section>
 
-        <a href="brukarstwo.html" class="box">
-            <img src="Brukarstwo.png" alt="Brukarstwo">
-            <h3>Brukarstwo</h3>
-        </a>
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <div class="container">
 
-        <a href="czyszczenie.html" class="box">
-            <img src="Czyszczenie-kostki-brukowej.png" alt="Czyszczenie kostki">
-            <h3>Czyszczenie</h3>
-        </a>
+        <h2>Kontakt</h2>
 
-        <a href="ogrodzenia.html" class="box">
-            <img src="Ogrodzenia.png" alt="Ogrodzenia">
-            <h3>Ogrodzenia</h3>
-        </a>
+        <form>
+            <input type="text" placeholder="Imię i nazwisko" required>
+            <input type="tel" placeholder="Telefon" required>
+            <input type="email" placeholder="E-mail">
 
-        <a href="okna.html" class="box">
-            <img src="Okna-i-drzwi.png" alt="Okna i drzwi">
-            <h3>Okna i drzwi</h3>
-        </a>
+            <select>
+                <option>Wybierz usługę</option>
+                <option>Fit-out</option>
+                <option>Brukarstwo</option>
+                <option>Ogrodzenia</option>
+            </select>
 
-        <a href="serwis.html" class="box">
-            <img src="Serswis-okien-i-drzwi.png" alt="Serwis okien i drzwi">
-            <h3>Serwis</h3>
-        </a>
+            <textarea placeholder="Opisz projekt"></textarea>
+
+            <button type="submit">Wyślij zapytanie</button>
+        </form>
 
     </div>
 </section>
 
-<!-- CTA 2 -->
-<section class="quick-cta dark">
-    <h2>Masz projekt? Zrobimy wycenę</h2>
-    <a href="#contact" class="button">Przejdź do formularza</a>
-</section>
-
-<!-- CONTACT FORM -->
-<section id="contact" class="contact">
-    <h2>Zamów wycenę</h2>
-
-    <form>
-        <input type="text" placeholder="Imię i nazwisko" required>
-        <input type="tel" placeholder="Telefon" required>
-        <input type="email" placeholder="E-mail">
-
-        <select required>
-            <option value="">Wybierz usługę</option>
-            <option>Fit-out</option>
-            <option>Brukarstwo</option>
-            <option>Ogrodzenia</option>
-            <option>Serwis</option>
-        </select>
-
-        <textarea placeholder="Opisz inwestycję"></textarea>
-
-        <button type="submit">Wyślij zapytanie</button>
-    </form>
-</section>
-
-<footer class="footer">
-    © 2026 KPEX Sp. z o.o.
+<footer>
+    © 2026 KPEX
 </footer>
 
 </body>
