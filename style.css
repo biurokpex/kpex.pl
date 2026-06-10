@@ -1,8 +1,4 @@
-
-/* =========================
-   RESET
-========================= */
-
+/* RESET */
 *{
     margin:0;
     padding:0;
@@ -15,10 +11,7 @@ body{
     background:#fff;
 }
 
-/* =========================
-   TOPBAR
-========================= */
-
+/* TOPBAR */
 .topbar{
     position:fixed;
     top:0;
@@ -55,10 +48,7 @@ nav a{
     border-radius:6px;
 }
 
-/* =========================
-   HERO
-========================= */
-
+/* HERO */
 .hero{
     margin-top:72px;
     height:85vh;
@@ -99,10 +89,7 @@ nav a{
     font-size:18px;
 }
 
-/* =========================
-   BUTTONS
-========================= */
-
+/* BUTTONS */
 .btn{
     display:inline-block;
     margin-top:25px;
@@ -119,10 +106,7 @@ nav a{
     color:#111;
 }
 
-/* =========================
-   SECTIONS
-========================= */
-
+/* SECTIONS */
 .section{
     padding:100px 25px;
 }
@@ -141,10 +125,7 @@ h2{
     margin-bottom:25px;
 }
 
-/* =========================
-   SERVICES GRID
-========================= */
-
+/* SERVICES GRID */
 .grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -154,7 +135,7 @@ h2{
 .card{
     background:#fff;
     border:1px solid #e5e5e5;
-    padding:40px;
+    padding:20px;
     text-align:center;
     font-weight:700;
     font-size:16px;
@@ -167,10 +148,13 @@ h2{
     border-color:#111;
 }
 
-/* =========================
-   CTA
-========================= */
+.card-img{
+    width:100%;
+    border-radius:8px;
+    margin-bottom:15px;
+}
 
+/* CTA */
 .cta{
     background:#111;
     color:#fff;
@@ -178,10 +162,7 @@ h2{
     padding:90px 20px;
 }
 
-/* =========================
-   FORM
-========================= */
-
+/* FORM */
 form{
     max-width:600px;
     margin:auto;
@@ -211,20 +192,14 @@ button{
     cursor:pointer;
 }
 
-/* =========================
-   CONTACT INFO
-========================= */
-
+/* CONTACT INFO */
 .contact-info{
     margin-top:25px;
     text-align:center;
     color:#444;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
+/* FOOTER */
 footer{
     text-align:center;
     padding:30px;
@@ -232,10 +207,7 @@ footer{
     color:#777;
 }
 
-/* =========================
-   MOBILE
-========================= */
-
+/* MOBILE */
 @media(max-width:768px){
 
     .hero h1{
