@@ -27,17 +27,18 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 25px;
+    padding:0 30px;
     background:#fff;
     border-bottom:1px solid #eaeaea;
     z-index:9999;
 }
 
-.logo{
+    .logo{
     font-size:22px;
     font-weight:800;
-    letter-spacing:2px;
     color:#111;
+    letter-spacing:2px;
+}
 }
 
 nav a{
@@ -168,31 +169,30 @@ nav a{
 }
 
 .card{
-    background:#ffffff;
-    border:2px solid #ececec;
-    padding:45px;
+    background:#fff;
+    border:1px solid #ddd;
+    padding:35px;
     text-align:center;
     font-weight:700;
-    font-size:18px;
+    font-size:17px;
     border-radius:10px;
-    box-shadow:0 12px 30px rgba(0,0,0,0.06);
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
     transition:0.25s;
-    color:#111;
 }
 
-/* widoczny akcent */
 .card::before{
     content:"";
     display:block;
-    width:50px;
+    width:45px;
     height:4px;
     background:#111;
-    margin:0 auto 18px auto;
+    margin:0 auto 15px auto;
 }
 
 .card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-6px);
     border-color:#111;
+}
 }
 
 /* =========================
