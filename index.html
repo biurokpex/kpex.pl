@@ -1,135 +1,331 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>KPEX | Construction & Fit-out</title>
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>KPEX Sp. z o.o. – Fit-out, inwestycje budowlane, brukarstwo, ogrodzenia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KPEX Sp. z o.o. – fit-out, inwestycje budowlane, brukarstwo, ogrodzenia, okna i drzwi, serwis. Kompleksowa obsługa inwestycji.">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="topbar">
-    <div class="logo">KPEX</div>
-
-    <nav>
-        <a href="#about">O nas</a>
-        <a href="#services">Usługi</a>
-        <a href="#contact" class="cta">Kontakt</a>
-    </nav>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-    <img src="baner1.png" alt="budowa">
-
-    <div class="hero-content">
-        <h1>Budujemy przestrzenie, które działają</h1>
-        <p>Fit-out • Brukarstwo • Ogrodzenia • Warszawa i okolice</p>
-        <a href="#contact" class="btn">Zamów wycenę</a>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-    <div class="container">
-        <h2>O nas</h2>
-        <p>
-            KPEX to firma budowlana realizująca inwestycje dla klientów prywatnych i biznesowych.
-            Stawiamy na jakość, terminowość i pełną realizację projektów.
-        </p>
-    </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section light">
-    <div class="container">
-        <h2>Usługi</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <img src="Fit-out.png" class="card-img">
-                Fit-out
+    <!-- NAWIGACJA -->
+    <header class="topbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="img/LOGO kpex.png" alt="KPEX Sp. z o.o.">
             </div>
-
-            <div class="card">
-                <img src="Brukarstwo.png" class="card-img">
-                Brukarstwo
-            </div>
-
-            <div class="card">
-                <img src="Ogrodzenia.png" class="card-img">
-                Ogrodzenia
-            </div>
-
-            <div class="card">
-                <img src="Okna-i-drzwi.png" class="card-img">
-                Okna i drzwi
-            </div>
-
-            <div class="card">
-                <img src="Serswis-okien-i-drzwi.png" class="card-img">
-                Serwis okien i drzwi
-            </div>
-
-            <div class="card">
-                <img src="Czyszczenie-kostki-brukowej.png" class="card-img">
-                Czyszczenie kostki brukowej
-            </div>
-
+            <nav class="nav">
+                <a href="#o-nas">O nas</a>
+                <a href="#uslugi">Usługi</a>
+                <a href="#realizacje">Realizacje</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
         </div>
-    </div>
-</section>
+    </header>
 
-<!-- CTA -->
-<section class="cta">
-    <div class="container">
-        <h2>Masz projekt?</h2>
-        <p>Odpowiadamy w 24h</p>
-        <a href="#contact" class="btn light-btn">Skontaktuj się</a>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-    <div class="container">
-
-        <h2>Kontakt</h2>
-
-        <form>
-            <input type="text" placeholder="Imię i nazwisko" required>
-            <input type="tel" placeholder="Telefon" required>
-            <input type="email" placeholder="Email">
-
-            <select>
-                <option>Wybierz usługę</option>
-                <option>Fit-out</option>
-                <option>Brukarstwo</option>
-                <option>Ogrodzenia</option>
-                <option>Okna i drzwi</option>
-                <option>Serwis</option>
-                <option>Czyszczenie kostki</option>
-            </select>
-
-            <textarea placeholder="Opisz projekt"></textarea>
-
-            <button type="submit">Wyślij zapytanie</button>
-        </form>
-
-        <div class="contact-info">
-            KPEX Sp. z o.o. • Warszawa • tel: 500 000 000 • biuro@kpex.pl
+    <!-- HERO -->
+    <section class="hero" id="start">
+        <div class="hero-bg" style="background-image: url('img/Fitout.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1>KPEX Sp. z o.o.</h1>
+            <h2>Fit-out, inwestycje budowlane i obsługa techniczna obiektów</h2>
+            <p>Kompleksowe wsparcie w pozyskiwaniu inwestycji fit-out i budowlanych oraz realizacji prac wykonawczych.</p>
+            <div class="hero-buttons">
+                <a href="#uslugi" class="btn btn-primary">Poznaj ofertę</a>
+                <a href="#kontakt" class="btn btn-outline">Skontaktuj się</a>
+            </div>
         </div>
+    </section>
 
-    </div>
-</section>
+    <!-- O NAS -->
+    <section class="section" id="o-nas">
+        <div class="container split">
+            <div class="split-text">
+                <h3>O nas</h3>
+                <h2>Partner w inwestycjach fit-out i budowlanych</h2>
+                <p>
+                    Wspieramy rozwój Twojego biznesu, aktywnie pozyskując kontrakty fit-out oraz budowlane
+                    – od pierwszego kontaktu z inwestorem, przez negocjacje, aż po podpisanie umowy.
+                </p>
+                <p>
+                    Łączymy doświadczenie wykonawcze z biznesowym podejściem do inwestycji. Pracujemy dla
+                    klientów komercyjnych, instytucji publicznych oraz sektora przemysłowego.
+                </p>
+                <ul class="bullets">
+                    <li>Skuteczne pozyskiwanie inwestycji fit-out i budowlanych</li>
+                    <li>Kompleksowa obsługa – od koncepcji po realizację</li>
+                    <li>Transparentna komunikacja i długoterminowe relacje</li>
+                </ul>
+            </div>
+            <div class="split-image">
+                <img src="img/Onas.png" alt="Zespół KPEX">
+            </div>
+        </div>
+    </section>
 
-<footer>
-    © 2026 KPEX Sp. z o.o.
-</footer>
+    <!-- USŁUGI – KAFLE -->
+    <section class="section section-gray" id="uslugi">
+        <div class="container">
+            <h3>Usługi</h3>
+            <h2>Kompleksowa oferta KPEX</h2>
 
+            <div class="services-grid">
+                <a href="#fitout" class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h4>Fit-out</h4>
+                    <p>Kompleksowe wykończenia wnętrz komercyjnych i przemysłowych.</p>
+                </a>
+                <a href="#brukarstwo" class="service-card">
+                    <div class="service-icon">🧱</div>
+                    <h4>Brukarstwo</h4>
+                    <p>Układanie kostki brukowej: place, chodniki, podjazdy i drogi.</p>
+                </a>
+                <a href="#czyszczenie-kostki" class="service-card">
+                    <div class="service-icon">💧</div>
+                    <h4>Czyszczenie kostki</h4>
+                    <p>Mycie ciśnieniowe, usuwanie zabrudzeń, mchu i plam.</p>
+                </a>
+                <a href="#okna-drzwi" class="service-card">
+                    <div class="service-icon">🚪</div>
+                    <h4>Okna i drzwi</h4>
+                    <p>Nowoczesne okna i drzwi dopasowane do Twojego obiektu.</p>
+                </a>
+                <a href="#serwis-okien" class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h4>Serwis okien i drzwi</h4>
+                    <p>Profesjonalny serwis i regulacja stolarki okiennej i drzwiowej.</p>
+                </a>
+                <a href="#ogrodzenia" class="service-card">
+                    <div class="service-icon">🏡</div>
+                    <h4>Ogrodzenia</h4>
+                    <p>Trwałe i estetyczne ogrodzenia dla posesji i obiektów przemysłowych.</p>
+                </a>
+                <a href="#realizacje" class="service-card">
+                    <div class="service-icon">📂</div>
+                    <h4>Realizacje</h4>
+                    <p>Wybrane projekty dla klientów komercyjnych i instytucji.</p>
+                </a>
+                <a href="#kontakt" class="service-card">
+                    <div class="service-icon">📞</div>
+                    <h4>Kontakt</h4>
+                    <p>Skontaktuj się z nami – przygotujemy ofertę dla Twojej inwestycji.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJE 50/50 – FIT-OUT -->
+    <section class="section section-split" id="fitout">
+        <div class="container split">
+            <div class="split-image">
+                <img src="img/Fitout.png" alt="Fit-out KPEX">
+            </div>
+            <div class="split-text">
+                <h3>Fit-out</h3>
+                <h2>Kompleksowe wykończenia wnętrz</h2>
+                <p>
+                    Realizujemy kompleksowe wykończenia wnętrz biurowych, usługowych i przemysłowych.
+                    Koordynujemy cały proces – od projektu, przez prace budowlane, instalacyjne i wykończeniowe,
+                    aż po przekazanie gotowej przestrzeni do użytkowania.
+                </p>
+                <ul class="bullets">
+                    <li>Biura, lokale usługowe, obiekty przemysłowe</li>
+                    <li>Koordynacja branż i podwykonawców</li>
+                    <li>Realizacja w działających obiektach</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRUKARSTWO -->
+    <section class="section section-split section-gray" id="brukarstwo">
+        <div class="container split reverse">
+            <div class="split-image">
+                <img src="img/Brukarstwo.png" alt="Brukarstwo KPEX">
+            </div>
+            <div class="split-text">
+                <h3>Brukarstwo</h3>
+                <h2>Place, chodniki, podjazdy</h2>
+                <p>
+                    Wykonujemy nawierzchnie z kostki brukowej dla inwestycji komercyjnych, przemysłowych
+                    i prywatnych. Dbamy o prawidłowe przygotowanie podbudowy, odwodnienie oraz estetykę
+                    wykończenia.
+                </p>
+                <ul class="bullets">
+                    <li>Podjazdy, parkingi, ciągi piesze</li>
+                    <li>Nawierzchnie przy obiektach usługowych i magazynowych</li>
+                    <li>Naprawy i modernizacje istniejących nawierzchni</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CZYSZCZENIE KOSTKI -->
+    <section class="section section-split" id="czyszczenie-kostki">
+        <div class="container split">
+            <div class="split-image">
+                <img src="img/Czyszczeniekostkbrukowej.png" alt="Czyszczenie kostki KPEX">
+            </div>
+            <div class="split-text">
+                <h3>Czyszczenie kostki brukowej</h3>
+                <h2>Przywracamy estetykę nawierzchni</h2>
+                <p>
+                    Profesjonalne mycie ciśnieniowe kostki brukowej, usuwanie zabrudzeń, mchu, porostów
+                    i plam olejowych. Pracujemy przy obiektach komercyjnych, osiedlach i posesjach prywatnych.
+                </p>
+                <ul class="bullets">
+                    <li>Mycie ciśnieniowe nawierzchni</li>
+                    <li>Usuwanie mchu i porostów</li>
+                    <li>Przygotowanie terenu przed odbiorami</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- OKNA I DRZWI -->
+    <section class="section section-split section-gray" id="okna-drzwi">
+        <div class="container split reverse">
+            <div class="split-image">
+                <img src="img/Okna.png" alt="Okna i drzwi KPEX">
+            </div>
+            <div class="split-text">
+                <h3>Okna i drzwi</h3>
+                <h2>Nowoczesna stolarka dla Twojego obiektu</h2>
+                <p>
+                    Dostarczamy i montujemy okna oraz drzwi dopasowane do wymagań obiektów komercyjnych
+                    i przemysłowych. Łączymy parametry techniczne z estetyką i funkcjonalnością.
+                </p>
+                <ul class="bullets">
+                    <li>Okna i drzwi dla biur, lokali i hal</li>
+                    <li>Rozwiązania energooszczędne</li>
+                    <li>Profesjonalny montaż</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERWIS OKIEN I DRZWI -->
+    <section class="section section-split" id="serwis-okien">
+        <div class="container split">
+            <div class="split-image">
+                <img src="img/Serswisokienidrzwi.png" alt="Serwis okien i drzwi KPEX">
+            </div>
+            <div class="split-text">
+                <h3>Serwis okien i drzwi</h3>
+                <h2>Sprawna i bezpieczna stolarka</h2>
+                <p>
+                    Zapewniamy serwis, regulację i naprawy okien oraz drzwi w obiektach biurowych,
+                    usługowych i przemysłowych. Działamy szybko, minimalizując przestoje w pracy obiektu.
+                </p>
+                <ul class="bullets">
+                    <li>Regulacja i naprawy</li>
+                    <li>Uszczelnianie i poprawa komfortu użytkowania</li>
+                    <li>Stała obsługa serwisowa obiektów</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- OGRODZENIA -->
+    <section class="section section-split section-gray" id="ogrodzenia">
+        <div class="container split reverse">
+            <div class="split-image">
+                <img src="img/Ogrodzenia.png" alt="Ogrodzenia KPEX">
+            </div>
+            <div class="split-text">
+                <h3>Ogrodzenia</h3>
+                <h2>Bezpieczeństwo i estetyka</h2>
+                <p>
+                    Wykonujemy ogrodzenia dla posesji prywatnych, osiedli oraz obiektów przemysłowych.
+                    Stawiamy na trwałość, funkcjonalność i dopasowanie do architektury budynku.
+                </p>
+                <ul class="bullets">
+                    <li>Ogrodzenia panelowe i nowoczesne systemy</li>
+                    <li>Bramy wjazdowe i furtki</li>
+                    <li>Rozwiązania dla firm i inwestorów indywidualnych</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- REALIZACJE -->
+    <section class="section" id="realizacje">
+        <div class="container">
+            <h3>Realizacje</h3>
+            <h2>Wybrane projekty</h2>
+            <p class="section-intro">
+                Pracujemy dla klientów komercyjnych, instytucji publicznych i sektora przemysłowego.
+                Wśród naszych realizacji znajdują się m.in. biura, obiekty usługowe, inwestycje drogowe
+                i przestrzenie publiczne.
+            </p>
+            <div class="tags">
+                <span>Biura i fit-out</span>
+                <span>Obiekty usługowe</span>
+                <span>Inwestycje drogowe</span>
+                <span>Obiekty przemysłowe</span>
+                <span>Osiedla mieszkaniowe</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section section-gray" id="kontakt">
+        <div class="container split">
+            <div class="split-text">
+                <h3>Kontakt</h3>
+                <h2>Porozmawiajmy o Twojej inwestycji</h2>
+                <p>
+                    Opowiedz nam o swoim projekcie – przygotujemy dopasowaną ofertę i zaproponujemy
+                    najlepszy model współpracy.
+                </p>
+                <div class="contact-data">
+                    <p><strong>KPEX Sp. z o.o.</strong></p>
+                    <p>ul. Marcina Kasprzaka 31/119<br>01-234 Warszawa</p>
+                    <p>NIP: 5273210555<br>KRS: 0001229775</p>
+                    <p>E-mail: <a href="mailto:biuro@kpex.pl">biuro@kpex.pl</a></p>
+                    <p>Telefon: <a href="tel:+48">+48 ... ... ...</a></p>
+                </div>
+            </div>
+            <div class="split-form">
+                <form class="contact-form">
+                    <div class="form-row">
+                        <label>Imię i nazwisko</label>
+                        <input type="text" placeholder="Twoje imię i nazwisko">
+                    </div>
+                    <div class="form-row">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="adres@firma.pl">
+                    </div>
+                    <div class="form-row">
+                        <label>Telefon</label>
+                        <input type="tel" placeholder="+48 ... ... ...">
+                    </div>
+                    <div class="form-row">
+                        <label>Wiadomość</label>
+                        <textarea rows="4" placeholder="Opisz krótko swoją inwestycję"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Wyślij zapytanie</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- STOPKA -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <span>© <span id="year"></span> KPEX Sp. z o.o.</span>
+            </div>
+            <div class="footer-right">
+                <span>Fit-out • Inwestycje budowlane • Brukarstwo • Ogrodzenia • Okna i drzwi • Serwis</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
